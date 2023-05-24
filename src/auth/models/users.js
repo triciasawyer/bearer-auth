@@ -28,7 +28,7 @@ const userSchema = (sequelize, DataTypes) => {
     const valid = await bcrypt.compare(password, user.password);
     if (valid) { return user; }
     throw new Error('Invalid User');
-  }
+  };
 
   // Bearer AUTH: Validating a token
   model.authenticateToken = async function (token) {
