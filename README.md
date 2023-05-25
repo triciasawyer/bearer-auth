@@ -34,7 +34,7 @@ to run tests, after running `npm i`, run the command `npm test`
 
 #### Deployed version
 
-[Render deploy](https://basic-auth-prod.onrender.com)
+[Render deploy](https://bearer-auth-prod.onrender.com)
 
 #### PR
 
@@ -42,4 +42,4 @@ to run tests, after running `npm i`, run the command `npm test`
 
 #### UML
 
-![UML]()
+![UML](./lab7-UML.png)
