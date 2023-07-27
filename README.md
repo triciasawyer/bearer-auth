@@ -15,6 +15,8 @@ Any user that has successfully logged in using basic authentication (username an
 
 ### Collaborators
 
+Ryan Gallaway in class together, UML
+
 ### Setup
 
 .env requirements (where applicable)
