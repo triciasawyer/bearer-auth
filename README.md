@@ -1,4 +1,4 @@
-# bearer-auth
+# Bearer Auth
 
 ## Author: Tricia Sawyer
 
