@@ -1,47 +1,47 @@
 # Bearer auth
 
-### Author: Tricia Sawyer
+## Author: Tricia Sawyer
 
 ### Problem Domain
 
-Any user that has successfully logged in using basic authentication (username and password) is able to continuously authenticate … using a “token”
-
-### Links and Resources
-
-- [GitHub Actions ci/cd]
-- [back-end prod server url]
-
-### Collaborators
-
-Ryan Gallaway in class together, UML
+This project extends the functionality of the existing authentication server, enabling users who have successfully logged in using basic authentication (username and password) to continuously authenticate using a "token." This token-based authentication enhances security and user experience.
 
 ### Setup
 
-.env requirements (where applicable)
-port variable exists within the env sample
+#### Environment Variables
 
-How to initialize/run your application (where applicable)
-clone repo, npm i, then run nodemon in the terminal
+Ensure you have the following environment variables defined in your `.env` file:
 
-#### Routes
+- `PORT`: Port variable to specify the server's listening port.
 
-/signin
-/signup
+#### Initializing and Running the Application
 
-#### Tests
+To initialize and run the application, follow these steps:
 
-to run tests, after running `npm i`, run the command `npm test`
+- Clone the repository to your local machine.
+- Install project dependencies using `npm i`.
+- Execute the command `npm test` to run tests.
+- Start the server by running `nodemon` in your terminal.
 
-#### Deployed version
+### Routes
 
-[Render deploy](https://bearer-auth-prod.onrender.com)
+- POST `/signin`: Endpoint for user sign-in using token-based authentication.
+- POST `/signup`: Endpoint for user sign-up and basic authentication.
 
-#### PR
+### Deployment
 
-[PR 1](dev)
+Access the deployed version of the application at [Render deploy](https://bearer-auth-prod.onrender.com)
 
-#### UML
+### Collaborators
 
-![UML](./lab7-UML.png)
+Ryan Gallaway
 
-Extends my current authentication server functionality, which enables the creation of user accounts and manages basic authentication. This new server takes it a step further by incorporating tokens to allow users to re-authenticate. This additional layer of authentication safeguards routes that demand a valid login.
+<!-- ### Pull Request
+
+[PR 1](dev) -->
+
+### UML Diagram
+
+![UML Diagram](./lab7-UML.png)
+
+This Bearer Auth project builds upon the existing authentication server by introducing token-based authentication. Users who have logged in using basic authentication can now continuously authenticate using tokens, adding an extra layer of security to routes that require valid login credentials.
